@@ -1,0 +1,73 @@
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    .logout {
+        position: absolute;
+        right:0;
+        top: 50%;
+        font-family: inherit;
+        font-size: 0.3em;
+        border-radius: 50rem;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+}
+.item {
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    padding: 0.5em;
+    box-sizing: border-box;
+    button:active {
+        transform: scale(0.95);
+    }
+}
+
+.text, button {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 15px;
+    border: 1px solid rgba(168, 168, 168, 0.5);
+    outline: none;
+}
+.text {
+    width: 100%;
+    transition: border ease 0.3s;
+}
+.text:focus {
+    border: 1px solid rgba(168, 168, 168, 1);
+}
+
+.list {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.check {
+    width: 3em;
+    margin-right: 1rem;
+}
+
+button {
+    margin-left: 1rem;
+    cursor: pointer;
+    transition: color ease 0.3s, background-color ease 0.3s;
+}
+button:hover {
+    color: white;
+    background-color: rgb(160, 160, 160);
+}
+
+.todo-list {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
